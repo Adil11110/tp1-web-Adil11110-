@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>le premier site web</title>
+    </head>
+    <body>
+        <form name="exo06.html" action="" method="post">
+            <h1>Créer un compte</h1>
+             <fieldset>
+            <legend>Identité</legend>
+            <label for="nome">nome</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="prenome">Prenome</label><br>
+            <input type="text" id="prenome" name="prenome" required><br>
+            <label for="Date_de_naissance">Date de naissance</label><br>
+            <input type="date" id="Date_de_naissance" min="1900-01-01" max="2025-11-26" name="Date_de_naissance" required><br>
+             <br>
+             </fieldset>
+             <fieldset>
+             <legend>Contact</legend>
+            <label for="Téléphone">Téléphone</label><br>
+            <input type="text" id="Téléphone" pattern="^0[5-7]\d{8}$" title="Format marocain: 05XXXXXXXX, 06XXXXXXXX, 07XXXXXXXX" name="Téléphone" required><br>
+            <label for="Site_perso">Site perso</label><br>
+            <input type="url" id="Site_perso" name="Site_perso" required><br>
+             <br>
+             </fieldset>
+             <fieldset>
+            <legend>Sécurité</legend>
+            <label for="Mot_de_passe">Mot de passe</label><br>
+            <input type="password" id="Mot_de_passe" name="Mot_de_passe" minlength="8" required><br>
+            <label for="Confirmation">Confirmation</label><br>
+            <input type="password" id="Confirmation" name="Confirmation" minlength="8" required><br>
+            <br>
+            </fieldset>
+            <fieldset>
+            <legend>Préférences</legend>
+            <label for="Newsletter">Newsletter</label><br>
+            <input type="checkbox" id="Newsletter" name="Newsletter"><br>
+            <label for="Role">Role</label><br>
+             <input type="radio" id="etudiant" name="role" value="Etudiant" required>
+             <label for="etudiant">Étudiant</label>
+              <input type="radio" id="Pro" name="role" value="pro" required>
+             <label for="etudiant">Pro</label>
+            </fieldset>
+
+             <input type="submit" value="Créer le compte">
+
+        </form>
+    </body>
+ </html>
